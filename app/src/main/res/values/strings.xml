@@ -1,0 +1,439 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Health &amp; Fitness</string>
+
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="g_native">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="interstitial_key">ca-app-pub-3940256099942544/1033173712</string>
+
+
+
+    <string name="Abnormally_Slim">Abnormally Slim</string>
+    <string name="Acceptable">Acceptable</string>
+    <string name="Active">Active</string>
+    <string name="Adults">Adults</string>
+    <string name="Aerobic_exercise">Aerobic exercise</string>
+    <string name="Age">Age</string>
+    <string name="Age_Group_Under17">Age Group : Under 17</string>
+    <string name="Age_Group_Under35">Age Group : Under 35</string>
+    <string name="Age_Group_Under35over">Age Group : 35 and over</string>
+    <string name="Age_of_Child_in_Months">Age of Child in Months</string>
+    <string name="Alcohol_Effects">Alcohol Effects</string>
+    <string name="Alcohol_Effects_by_BAC_level">Alcohol Effects by BAC level</string>
+    <string name="Alcohol_level">Alcohol \10 level%</string>
+    <string name="Apathy_impaired">Apathy, impaired consciousness, stupor, significantly decreased response to stimulation, severe muscular incoordination, inability to stand or walk, vomiting, incontinence of urine and feces</string>
+    <string name="Approximate_Calories_Burned">Approximate Calories Burned</string>
+    <string name="Athletes">Athletes</string>
+    <string name="Average">Average</string>
+    <string name="Average_individual_appears_normal">Average individual appears normal</string>
+    <string name="BAC_level">Your Blood Alcohol Content level is</string>
+    <string name="Bicycling">Bicycling</string>
+    <string name="Bill_Rogers_move_over">Bill Rogers move over!</string>
+    <string name="Blood_Alcohol_Content">Blood Alcohol Content</string>
+    <string name="Blood_Donation_Time_Calculator">Blood Donation Time Calculator</string>
+    <string name="Blood_Pressure_Calculator">Blood Pressure Calculator</string>
+    <string name="Blood_Pressure_Category">Blood Pressure Category</string>
+    <string name="Blood_Sugar">Your Blood Sugar Level is :</string>
+    <string name="Blood_Sugar_Conversion">Blood Sugar Conversion</string>
+    <string name="Blood_Sugar_level_mg">Blood sugar level in mg/dl</string>
+    <string name="Blood_Sugar_level_mmol">Blood Sugar level in mmol/l</string>
+    <string name="Body_Fat_Calculator">Body Fat Calculator</string>
+    <string name="Body_Fat_Percentage_Comparison_Table">Body Fat Percentage Comparison Table</string>
+    <string name="Body_Fat_Percentage_for_Men_and_Women">Body Fat Percentage for Men and Women</string>
+    <string name="Body_Mass_Index_Calculator">Body Mass Index Calculator</string>
+    <string name="Body_frame_size">Body Frame Size Calculator</string>
+    <string name="Body_frame_text">Your Body Frame Size is</string>
+    <string name="Body_frame_text_large">Large</string>
+    <string name="Body_frame_text_medium">Medium</string>
+    <string name="Body_frame_text_small">Small</string>
+    <string name="Bruce_trade_mill">Your Bruce trade mill is :</string>
+    <string name="Burn_Calories">Burn Calories</string>
+    <string name="Calculate_BMI">Calculate BMI</string>
+    <string name="Calculate_BMR">Calculate Basal Metabolic Rate</string>
+    <string name="Calculate_Blood_Alcohol_Content">Calculate Blood Alcohol Content</string>
+    <string name="Calculate_Blood_Pressure">Calculate Blood Pressure</string>
+    <string name="Calculate_Blood_Sugar">Calculate Blood Sugar</string>
+    <string name="Calculate_Blood_volume">Calculate Blood Volume</string>
+    <string name="Calculate_Body_Fat">Calculate Body Fat</string>
+    <string name="Calculate_Bruce_Trade_Mill">Calculate Bruce Trade Mill</string>
+    <string name="Calculate_Daily_Calories_Intake">Calculate Daily Calories Intake</string>
+    <string name="Calculate_Estimated_Height">Calculate Estimated Height</string>
+    <string name="Calculate_Estimated_Weight">Calculate Estimated Weight</string>
+    <string name="Calculate_Expected_Date_of_Delivery">Calculate Expected Date of Delivery</string>
+    <string name="Calculate_Head_Circumference">Calculate Head Circumference</string>
+    <string name="Calculate_Heart_Rate">Calculate Heart Rate</string>
+    <string name="Calculate_Next_Eligible_Date">Calculate Next Eligible Date</string>
+    <string name="Calculate_RMR">Calculate Resting Metabolic Rate</string>
+    <string name="Calculate_Smoking_Risk">Calculate Smoking Risk</string>
+    <string name="Calculate_Smoking_cost">Calculate Smoking cost</string>
+    <string name="Calculate_Your_Total_Calorie_Burn">Calculate Your Total Calorie Burn</string>
+    <string name="Calculate_childs_Predicted_Height">Calculate child\'s Predicted Height</string>
+    <string name="Calculate_next_menstrual">Calculate next menstrual &amp; ovulation date</string>
+    <string name="Calculate_water_intake">Calculate water intake</string>
+    <string name="Calorie_Requirements_a_Day_for_Men">Calorie Requirements a Day for Men</string>
+    <string name="Calorie_Requirements_a_Day_for_Women">Calorie Requirements a Day for Women</string>
+    <string name="Calories_Burned_Calculator">Calories Burned Calculator</string>
+    <string name="Calories_burned">Calories burned</string>
+    <string name="Calories_per_day">Calories per day</string>
+    <string name="Calories_per_day_will_cause_you_to_Lose_one_pound_a_week">Calories per day will cause you to Lose one pound a week.</string>
+    <string name="Calories_per_day_will_cause_you_to_gain_one_pound_a_week">Calories per day will cause you to gain one pound a week.</string>
+    <string name="Children">Children</string>
+    <string name="Childrens_Height_Predictor">Children\'s Height Predictor</string>
+    <string name="Classification">Classification</string>
+    <string name="Confusion_dizziness">Confusion, dizziness, exaggerated emotions (anger, fear, grief) impaired visual perception, decreased pain sensation, impaired balance, staggering gait, slurred speech, moderate muscular incoordination</string>
+    <string name="Daily_Calories_Intake_Calculator">Daily Calories Intake Calculator</string>
+    <string name="Daily_Water_Intake">Your Daily Water Intake is :</string>
+    <string name="Date_of_Next_donation">Date of Next donation</string>
+    <string name="Date_of_last_Menstrual">Date of last Menstrual</string>
+    <string name="Date_of_last_donation">Date of last donation</string>
+    <string name="Date_of_next_Menstrual">Date of next Menstrual</string>
+    <string name="Date_of_the_first_day_of_your_last_period_is">Date of the first day of your last period is</string>
+    <string name="Day">Day</string>
+    <string name="Days">Days</string>
+    <string name="Days_21">21 Days</string>
+    <string name="Diastolic_Blood_Pressure">Diastolic Blood Pressure</string>
+    <string name="Diastolic_mmHg">Diastolic mmHg</string>
+    <string name="Drink_volume">Drink volume ( ml )</string>
+    <string name="Emotional_instability">Emotional instability, loss of critical judgment, impairment of memory and comprehension, decreased sensory response, mild muscular incoordination</string>
+    <string name="Enter_Age">Enter Age</string>
+    <string name="Enter_Alcohol_level">Enter Alcohol level</string>
+    <string name="Enter_Blood_sugar_value">Enter Blood sugar value</string>
+    <string name="Enter_Distance_You_Run">Enter Distance You Run</string>
+    <string name="Enter_Drink_volume">Enter Drink volume</string>
+    <string name="Enter_Fathers_Height">Enter Father\'s Height</string>
+    <string name="Enter_Heart_Rate">Enter Heart Rate</string>
+    <string name="Enter_Height">Enter Height</string>
+    <string name="Enter_Mothers_Height">Enter Mother\'s Height</string>
+    <string name="Enter_Systolic_Pressure">Enter Systolic Pressure(Upper)mmHg</string>
+    <string name="Enter_Weight">Enter Weight</string>
+    <string name="Enter_diastolic_Pressure">Enter diastolic Pressure(Upper)mmHg</string>
+    <string name="Enter_diastolic_value">Enter diastolic value</string>
+    <string name="Enter_distance_you_run">Enter distance you run</string>
+    <string name="Enter_no_of_cigarattes_per_day">Enter no of cigarattes per day</string>
+    <string name="Enter_no_of_cigarettes">Enter no of cigarettes</string>
+    <string name="Enter_no_of_cigarettes_in_pack">Enter no of cigarettes in pack</string>
+    <string name="Enter_no_of_cigarettes_smoked_per_day">Enter no of cigarettes smoked per day</string>
+    <string name="Enter_price_per_packes_in_Rs">Enter price per packes in Rs</string>
+    <string name="Enter_systolic_value">Enter systolic value</string>
+    <string name="Enter_time">Enter time</string>
+    <string name="Enter_time_in_minute">Enter time in minute</string>
+    <string name="Enter_time_passed_sence_drinking">Enter time passed sence drinking</string>
+    <string name="Enter_weight">Enter weight</string>
+    <string name="Enter_your_resting_heart_rate">Enter your resting heart rate</string>
+    <string name="Essential_Fat">Essential Fat</string>
+    <string name="Estimated_Expected_Date_of_Delivery">Estimated Expected Date of Delivery</string>
+    <string name="Estimated_Head_Circumference">Estimated Head Circumference</string>
+    <string name="Estimated_Height">Estimated Height</string>
+    <string name="Estimated_Weight">Estimated Weight</string>
+    <string name="Exercise">Exercise</string>
+    <string name="Extremely_Obese">Extremely Obese</string>
+    <string name="Extremely_Obese_BMI">Extremely Obese BMI :</string>
+    <string name="Extremely_Overweight">Extremely Overweight/Obese</string>
+    <string name="Extremely_slim">Extremely slim</string>
+    <string name="Fat_Level">Fat Level</string>
+    <string name="Feet_At_21_Years">Feet At 21 Years</string>
+    <string name="Female">Female</string>
+    <string name="Fitness">Fitness</string>
+    <string name="Gardening">Gardening</string>
+    <string name="Great_Your_a_runner_keep_it_up">Great! Your a runner.....keep it up!</string>
+    <string name="Healthy">Healthy, Normal, Attractive Weight</string>
+    <string name="Heart_Rate">Heart Rate</string>
+    <string name="Heart_Rate_Calculator">Heart Rate Calculator</string>
+    <string name="Heavy">Heavy</string>
+    <string name="High">High</string>
+    <string name="High_Blood_Pressure_Stage_1">High Blood Pressure (Hypertension) Stage 1</string>
+    <string name="High_Blood_Pressure_Stage_2">High Blood Pressure (Hypertension) Stage 2</string>
+    <string name="Highly_Obese">Highly Obese</string>
+    <string name="Hour">Hour</string>
+    <string name="Hypertension_Stage1">Hypertension Stage 1</string>
+    <string name="Hypertension_Stage2">Hypertension Stage 2</string>
+    <string name="Hypertensive_Crisis">Hypertensive Crisis</string>
+    <string name="Hypertensive_Crisis_Emergency_care_needed">Hypertensive Crisis.Emergency care needed</string>
+    <string name="Ideal_Body_Weight_Calculator">Ideal Body Weight Calculator</string>
+    <string name="Intensity">Intensity</string>
+    <string name="Jogging">Jogging</string>
+    <string name="Karvonen_Formula">Karvonen Formula for Heart Rate Calculator \10 (Heart Rate Reserve Method)</string>
+    <string name="Kids_Growth_Calculator">Kids Growth Calculator</string>
+    <string name="Level">Level</string>
+    <string name="Light">Light</string>
+    <string name="Low">Low</string>
+    <string name="Low_Activity">Low Activity</string>
+    <string name="Male">Male</string>
+    <string name="Medium">Medium</string>
+    <string name="Men_fat">Men(%)</string>
+    <string name="Menstrual_Ovulation_Calculator">Menstrual Ovulation Calculator</string>
+    <string name="Mild_euphoria">Mild euphoria,talkativeness, decreased inhibitions, decreased attention, impaired judgment, increased reaction time</string>
+    <string name="Minute">Minute</string>
+    <string name="Moderate">Moderate</string>
+    <string name="Month">Month</string>
+    <string name="Month_0">0Month</string>
+    <string name="Monthly_Expense">Monthly Expense</string>
+    <string name="Nice_run_but_you_can_do_better">Nice run, but you can do better.</string>
+    <string name="Normal">Normal</string>
+    <string name="Normal_Blood_Pressure">Normal Blood Pressure</string>
+    <string name="Obese">Obese</string>
+    <string name="Obese_BMI">Obese BMI :</string>
+    <string name="Overweight">Overweight</string>
+    <string name="Overweight_BMI">Overweight BMI :</string>
+    <string name="Please_select_valid_date">Please select valid date</string>
+    <string name="Pregnancy_Due_Date_Calculator">Pregnancy Due Date Calculator</string>
+    <string name="Prehypertension">Prehypertension</string>
+    <string name="RESULT">RESULT</string>
+    <string name="Recommended_BMI">Recommended BMI:</string>
+    <string name="Recommended_BMI_Value">Recommended BMI Value</string>
+    <string name="Recommended_Bodyfat">Recommended Bodyfat</string>
+    <string name="Running">Running</string>
+    <string name="Sedentary">Sedentary</string>
+    <string name="Selct_cycle_days">Selct cycle days:</string>
+    <string name="Select_Child_Gender">Select Child\'s Gender :</string>
+    <string name="Select_Date">Select Date</string>
+    <string name="Select_Your_Bodyframe">Select Your Bodyframe :</string>
+    <string name="Select_Your_Gender">Select Your Gender :</string>
+    <string name="Select_date_of_Last_Menstrual_Period">Select date of Last Menstrual Period :</string>
+    <string name="Select_date_of_last_donation">Select date of last donation :</string>
+    <string name="Select_first_day_of_last_menstrual">Select first day of last menstrual:</string>
+    <string name="Select_your_activity_level">Select your activity level :</string>
+    <string name="Slender">Slender and Healthy</string>
+    <string name="Smoking_Cost">Smoking Cost</string>
+    <string name="Smoking_Risk">Smoking Risk</string>
+    <string name="Swimming">Swimming</string>
+    <string name="Systolic_Blood_Pressure">Systolic Blood Pressure(Upper)</string>
+    <string name="Systolic_mmHg">Systolic mmHg</string>
+    <string name="Target_Heart_Rate_Zone_Calculator">Target Heart Rate Zone Calculator</string>
+    <string name="The_fact_that_you_smoked">The fact that you smoked</string>
+    <string name="This_means_that_your_body_will_burn">This means that your body will burn</string>
+    <string name="Time_passed_sence_drinking">Time passed sence drinking</string>
+    <string name="To_gain_weight_by">To gain weight by</string>
+    <string name="To_lose_weight">To lose weight</string>
+    <string name="To_maintain_current_weight">To maintain current weight</string>
+    <string name="Unconsciousness">Unconsciousness, depressed or abolished reflexes, abnormal body temperature, coma; possible death from respiratory paralysis</string>
+    <string name="Under_Weight">Under Weight</string>
+    <string name="Very_High">Very High</string>
+    <string name="Very_Low">Very Low</string>
+    <string name="Very_good_Push_above_next_time">Very good! Push above next time.</string>
+    <string name="View_Chart">View Chart</string>
+    <string name="Walking">Walking</string>
+    <string name="Water_IntakeCalculator">Water IntakeCalculator</string>
+    <string name="Weekly_Expense">Weekly Expense</string>
+    <string name="Weight">Weight</string>
+    <string name="When_quit_smoking">if quit smoking\10 when was that</string>
+    <string name="When_start_smoking">When did you \10start smoking</string>
+    <string name="Women_fat">Women(%)</string>
+    <string name="Yearly_Expense">Yearly Expense</string>
+    <string name="You_better_start_working">You better start working!</string>
+    <string name="You_need">You need</string>
+    <string name="Your_BMI_is">Your BMI is</string>
+    <string name="Your_BMR_is">Your Basal Metabolic Rate is</string>
+    <string name="Your_BMR_value_is">Your Daily Calorie intake is :</string>
+    <string name="Your_Body_Fat_is">Your Body Fat is</string>
+    <string name="Your_Childs_Predicted_Height">Your Child\'s Predicted Height is :</string>
+    <string name="Your_RMR_is">Your Resting Metabolic Rate is</string>
+    <string name="Your_bloodvolume_is">Your Blood Volume is</string>
+    <string name="Your_ideal_body_weight_is">Your ideal body weight is :</string>
+    <string name="Your_ideal_body_weight_range_is">Your ideal body weight range is :</string>
+    <string name="Your_my_hero_Have_a_jelly_doughnut">Your my hero! Have a jelly doughnut.!</string>
+    <string name="Your_next_ovulation_period_is">Your next ovulation period is</string>
+    <string name="_100_calories_burned_in_20min">100 calories burned in 20 min</string>
+    <string name="_100_calories_burned_in_30min">100 calories burned in 30 min</string>
+    <string name="_100_calories_burned_per_mile">100 calories burned per mile</string>
+    <string name="_120_calories_burned_per_mile">120 calories burned per mile</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+
+    <string name="bai_female">Body Adiposity Index for Female</string>
+    <string name="bai_healthy">Healthy</string>
+    <string name="bai_is">The Body Adiposity Index is :</string>
+    <string name="bai_male">Body Adiposity Index for Male</string>
+    <string name="bai_title">Body Adiposity Index Calculator</string>
+
+    <string name="blood_volume_Calculator">Blood Volume Calculator</string>
+    <string name="bmr_Calculator">BMR Calculator</string>
+    <string name="body_surface_Area">Body Surface Area Calculator</string>
+
+    <string name="cal_per_day">calories/day</string>
+    <string name="cal_title">Calculate Body Adiposity Index</string>
+    <string name="calculate_body_frame">Calculate Body Frame Size</string>
+    <string name="calculate_body_surface_Area">Calculate Body Surface Area</string>
+    <string name="calculate_chr">Calculate Chest To Hip Ratio</string>
+    <string name="calculate_colestrol">Calculate Cholestrol Ratio</string>
+    <string name="calculate_lean_body_mass">Calculate Lean Body Mass</string>
+    <string name="calculate_waist_height_ratio">Calculate Waist Height Ratio</string>
+    <string name="calculate_whr">Calculate Waist To Hip Ratio</string>
+    <string name="calories">calories</string>
+    <string name="calories_each_day_if_you_engage_in_no_activity_for_the_entire_day">calories each day if you engage in no activity for the entire day.</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="cholestrol_ratio_calc">Cholestrol Ratio Calculator</string>
+    <string name="chr">Chest To Hip Ratio Calculator</string>
+    <string name="chr_percentage">Your Chest To Hip Ratio Percentage is :</string>
+    <string name="cigarettes_per_day_for_a_period_of">cigarettes per day for a period of</string>
+    <string name="cm">cm</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">%1$s won\'t work unless you enable Google Play services.</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">%1$s won\'t run without Google Play services, which are missing from your device.</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s won\'t run without Google Play services, which are not supported by your device.</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">%1$s won\'t run unless you update Google Play services.</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">%1$s won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+
+    <string name="enter_chest">Enter Chest Circumference</string>
+    <string name="enter_hdl">Enter HDL</string>
+    <string name="enter_hip">Enter Hip Circumference</string>
+    <string name="enter_ldl">Enter LDL</string>
+    <string name="enter_triglyceride">Enter Triglyceride</string>
+    <string name="enter_waist">Enter Waist Circumference</string>
+    <string name="enter_wrist">Enter Wrist</string>
+    <string name="feet">feet</string>
+    <string name="font_bold">fonts/proximanova_bold.otf</string>
+    <string name="font_light">fonts/proximanova_light.otf</string>
+    <string name="friday">Fri</string>
+    <string name="gcm_defaultSenderId">776761283214</string>
+    <string name="google_api_key">AIzaSyBA6dCyP4VrqVSor7tAUjWw8FThJlR6N48</string>
+    <string name="google_app_id">1:776761283214:android:f33b1f2bbbf1b489</string>
+    <string name="google_crash_reporting_api_key">AIzaSyBA6dCyP4VrqVSor7tAUjWw8FThJlR6N48</string>
+    <string name="google_storage_bucket">admob-app-id-9807796839.appspot.com</string>
+    <string name="health_risk">Your probable health risk is :</string>
+    <string name="health_risk_title">Health Risk</string>
+    <string name="heart_rate">Your Estimated maximum heart rate is :</string>
+    <string name="hour">Hour</string>
+    <string name="hours_of_your_life">hours of your life.</string>
+    <string name="inch">inch</string>
+
+    <string name="invite_friends_share_other_message">Hi,\10Check Out Health Calculator Pro.\10 Download Now https://play.google.com/store/apps/details?id=com.pragma.offshore.bmicalculator</string>
+    <string name="kg">kg</string>
+    <string name="km">km</string>
+    <string name="lbs">lbs</string>
+    <string name="lean_body_mass">Lean Body Mass Calculator</string>
+    <string name="lightly_active">I am lightly active (light exercise or sports 1-3 days per week)</string>
+    <string name="liter">liter</string>
+    <string name="lower_result">Lower Result :</string>
+    <string name="means_that_cigarettes_have_taken">days, means that cigarettes have taken</string>
+    <string name="mg">mg/dl to mmol/l</string>
+    <string name="mgdl">mg/dl</string>
+    <string name="mgol_a">mg/ol/L</string>
+    <string name="miles">miles</string>
+    <string name="mmol">mmol/l to mg/dl</string>
+    <string name="mmol_a">mm/ol/L</string>
+    <string name="moderately_active">I am moderately active (moderate exercise or sports 3-5 days per week)</string>
+    <string name="monday">Mon</string>
+    <string name="ok">ok</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="project_id">admob-app-id-9807796839</string>
+    <string name="rmr_Calculator">RMR Calculator</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="s7">Test Ad</string>
+    <string name="saturday">Sat</string>
+    <string name="search">Search</string>
+    <string name="search_menu_title">Search</string>
+    <string name="sedentary">I am sedentary (little or no exercise).</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="sunday">Sun</string>
+    <string name="super_active">I am super active (very hard exercise or sports and a physical job or 2x training)</string>
+    <string name="thrusday">Thu</string>
+    <string name="tuesday">Tue</string>
+    <string name="upper_result">Upper Result :</string>
+    <string name="very_active">I am very active (hard exercise or sports 6-7 days per week)</string>
+    <string name="view_chart">View Chart</string>
+    <string name="waist_height_ratio">Waist To Height Ratio Calculator</string>
+    <string name="wednesday">Wed</string>
+    <string name="whr">Waist To Hip Ratio Calculator</string>
+    <string name="whr_chart">Waist-to-hip ratio chart</string>
+    <string name="whr_chart_man1">0.95 or lower</string>
+    <string name="whr_chart_man2">0.96–1.0</string>
+    <string name="whr_chart_man3">1.0 or higher</string>
+    <string name="whr_chart_woman1">0.80 or lower</string>
+    <string name="whr_chart_woman2">0.81–0.85</string>
+    <string name="whr_chart_woman3">0.86 or higher</string>
+    <string name="whr_is">Your waist to hip ratio is :</string>
+    <string name="your_Body">Your Body is :</string>
+    <string name="your_Waist_Height_Ratio">Your Waist to Height Ratio is :</string>
+    <string name="your_body_surface_Area">Your Body Surface Area is</string>
+    <string name="your_cholestrol">Your Cholestrol Ratio is</string>
+    <string name="your_chr">Your Chest To Hip Ratio is :</string>
+    <string name="your_lean_body_mass">Your Lean Body Mass is</string>
+
+
+    <!--    pill_reminder-->
+
+
+    <!--    work out-->
+    <string name="day">Day</string>
+
+    <string name="default_web_client_id">189479422266-endj819hpiq9i6njiu2sb9imu6sopqi7.apps.googleusercontent.com</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="firebase_database_url">https://height-gain-7eb44.firebaseio.com</string>
+
+
+    <!--    Walk and step-->
+    <!---->
+    <!---->
+
+
+    <!-- Menu Items-->
+
+
+    <!-- ReportFragment -->
+
+
+    <!-- Preferences -->
+    <!-- general settings -->
+
+    <!-- 1km = 1km -->
+    <!-- 1km = 0.621371 miles -->
+
+    <!-- /general settings -->
+    <!-- notification settings -->
+
+    <!-- /notification settings -->
+    <!-- /Preferences -->
+
+    <!-- Will be removed on next update -->
+    <!--    <string name="notification_text_steps">%1$s of %2$s steps walked today.</string>-->
+    <!-- /Will be removed on next update -->
+
+    <!-- others -->
+    <!-- /others -->
+
+    <!-- welcome dialog -->
+    <!-- /welcome dialog -->
+
+    <!-- motivation alert -->
+
+    <!-- walking modes -->
+
+</resources>
