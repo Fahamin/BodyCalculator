@@ -14,7 +14,14 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="LLDialog" parent="Theme.AppCompat.Light.Dialog">
 
+
+        <item name="colorAccent">@color/purple_700</item>
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
     <!--    pill_reminder-->
 
 

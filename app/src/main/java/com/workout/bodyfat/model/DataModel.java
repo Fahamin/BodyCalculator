@@ -3,10 +3,10 @@ package com.workout.bodyfat.model;
 public class DataModel {
 
     int id;
-    String image;
+    Integer image;
     String title;
 
-    public DataModel(int id, String image, String title) {
+    public DataModel(int id, Integer image, String title) {
         this.id = id;
         this.image = image;
         this.title = title;
@@ -20,11 +20,11 @@ public class DataModel {
         this.id = id;
     }
 
-    public String getImage() {
+    public Integer getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(Integer image) {
         this.image = image;
     }
 

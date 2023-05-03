@@ -44,10 +44,12 @@ import com.workout.bodyfat.model.DataModel;
 import com.workout.bodyfat.utils.TypefaceManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ItemClickListener {
     ArrayList<DataModel> all_home = new ArrayList<>();
-    String[] arr_image;
+    List<Integer> arr_image;
     String[] arr_title;
     boolean doubleBackToExitPressedOnce = false;
     EditText et_sesrch;
@@ -66,15 +68,47 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
         et_sesrch = (EditText) findViewById(R.id.et_sesrch);
         recyclerview_homepage = (RecyclerView) findViewById(R.id.recyclerview_homepage);
         manager = new GridLayoutManager(this, 2);
+        arr_image = new ArrayList<>();
 
-        for (int i = 0; i < arr_title.length; i++) {
-            all_home.add(new DataModel(i, arr_image[i], arr_title[i]));
-        }
+
+        List<Integer> ImageList = Arrays.asList(
+                R.drawable.img_basal_metabolic_rate,
+                R.drawable.img_blood_donation,
+                R.drawable.img_blood_donation,
+                R.drawable.img_blood_pressure,
+                R.drawable.img_blood_sugar,
+                R.drawable.img_blood_volume,
+                R.drawable.img_body_adiposity_index,
+                R.drawable.img_body_fat,
+                R.drawable.img_body_frame_size,
+                R.drawable.img_body_mass,
+                R.drawable.img_body_surface_area,
+                R.drawable.img_bruce_trade_mill,
+                R.drawable.img_calorie_burn,
+                R.drawable.img_chest_to_hip_ratio,
+                R.drawable.img_childrens_height_predictor,
+                R.drawable.img_cholestrol_ratio,
+                R.drawable.img_daily_calorie_intake,
+                R.drawable.img_daily_water_intake,
+                R.drawable.img_heart_rate,
+                R.drawable.img_ideal_body_weight,
+                R.drawable.img_kids_growth,
+                R.drawable.img_lean_body_mass,
+                R.drawable.img_menstraul_ovulation,
+                R.drawable.img_pregnancy_due_date,
+                R.drawable.img_basal_metabolic_rate,
+                R.drawable.img_smoking_risk,
+                R.drawable.img_waist_to_height_ratio,
+                R.drawable.img_waist_to_hip_ratio
+
+        );
+        arr_image.addAll(ImageList);
 
         arr_title = getResources().getStringArray(R.array.arr_home_title);
-        arr_image = getResources().getStringArray(R.array.arr_home_image1);
 
-
+        for (int i = 0; i < arr_title.length; i++) {
+            all_home.add(new DataModel(i, arr_image.get(i), arr_title[i]));
+        }
         recyclerview_homepage.setLayoutManager(manager);
         home_adapter = new Home_Adapter(this, all_home, this, this);
         recyclerview_homepage.setAdapter(home_adapter);

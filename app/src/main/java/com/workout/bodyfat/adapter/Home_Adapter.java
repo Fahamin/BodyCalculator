@@ -26,7 +26,7 @@ import java.util.ArrayList;
 public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.MyHolder> implements Filterable {
     ArrayList<DataModel> FilteredList = new ArrayList<>();
     Activity activity;
-    public ArrayList<DataModel> allVideo;
+    public ArrayList<DataModel> list;
     ArrayList all_videohistoryArrayList;
     Context context;
     boolean isFilter = false;
@@ -49,7 +49,7 @@ public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.MyHolder> im
         this.activity = activity2;
         this.context = context2;
         this.all_videohistoryArrayList = arrayList;
-        this.allVideo = arrayList;
+        this.list = arrayList;
         this.itemClickListener = itemClickListener;
     }
 
@@ -61,10 +61,11 @@ public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.MyHolder> im
     @SuppressLint({"UseCompatLoadingForDrawables", "DiscouragedApi"})
     public void onBindViewHolder(@NonNull final MyHolder myHolder, int i) {
         try {
-            myHolder.tv_title_home.setText(((DataModel) this.all_videohistoryArrayList.get(i)).getTitle());
+            myHolder.tv_title_home.setText(list.get(i).getTitle());
             try {
-                Resources resources = this.context.getResources();
-                myHolder.image_home.setImageDrawable(resources.getDrawable(resources.getIdentifier(((DataModel) this.all_videohistoryArrayList.get(i)).getImage(), "drawable", this.context.getPackageName())));
+                myHolder.image_home.setImageResource(list.get(i).getImage());
+                myHolder.image_home.setColorFilter(R.color.blue);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -73,6 +74,13 @@ public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.MyHolder> im
             e2.printStackTrace();
         }
 
+
+        myHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itemClickListener.clickListener(i);
+            }
+        });
 
     }
 
@@ -93,14 +101,14 @@ public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.MyHolder> im
             public FilterResults performFiltering(CharSequence charSequence) {
                 FilterResults filterResults = new FilterResults();
                 if (charSequence == null || charSequence.length() == 0) {
-                    filterResults.values = Home_Adapter.this.allVideo;
-                    filterResults.count = Home_Adapter.this.allVideo.size();
+                    filterResults.values = Home_Adapter.this.list;
+                    filterResults.count = Home_Adapter.this.list.size();
                     Home_Adapter.this.isFilter = false;
                 } else {
                     Home_Adapter.this.FilteredList.clear();
                     Home_Adapter.this.isFilter = true;
-                    for (int i = 0; i < Home_Adapter.this.allVideo.size(); i++) {
-                        DataModel DataModel = (DataModel) Home_Adapter.this.allVideo.get(i);
+                    for (int i = 0; i < Home_Adapter.this.list.size(); i++) {
+                        DataModel DataModel = (DataModel) Home_Adapter.this.list.get(i);
                         if (DataModel.getTitle().toString().toLowerCase().contains(charSequence.toString().toLowerCase())) {
                             StringBuilder sb = new StringBuilder();
                             sb.append("pos->");

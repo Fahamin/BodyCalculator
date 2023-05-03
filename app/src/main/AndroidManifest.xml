@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -27,6 +36,332 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.workout.bodyfat.activity.bmi.BMI_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.bmi.BMI_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.bmi.BMI_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_fat.Bodyfat_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_fat.Bodyfat_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_fat.Body_Fat_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.calories_burn.Calories_burn_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.calories_burn.Calories_Burn_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.calories_burn.Calories_Burn_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.child_growth.Child_Growth_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.child_growth.Child_growth_result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.blood_donation.Blood_Donation_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.blood_donation.Blood_Donation_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.calories_intake.Daily_Calories_Intake_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.calories_intake.Daily_Calories_Intake_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.calories_intake.Daily_Calories_Intake_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.children_height_growth.Children_Height_Growth_Prediction_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.children_height_growth.Children_Predicted_Height_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.pregnancy_due_date.Pregnancy_Due_Date_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.ideal_body_weight.Ideal_Body_Weight_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.ideal_body_weight.Ideal_Body_Weight_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.heart_rate.Heart_Rate_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.heart_rate.Heart_Rate_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.heart_rate.Heart_Rate_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.blood_pressure.BloodPressure_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.blood_pressure.Bloodpressure_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.blood_pressure.BloodPressure_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.alcohol.Alcohol_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.alcohol.Alcohol_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.alcohol.Alcohol_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.trademill.Trademill_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.trademill.Trademill_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.daily_water.Daily_WaterIntake_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.daily_water.Daily_WaterIntake_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.smoking_cost.Smokincost_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.smoking_cost.SmokingCost_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.sugar.Sugar_calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.sugar.Sugar_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.sugar.Sugar_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.menstrual_and_ovulation.Menstrual_Ovulation_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.smoking_risk.Smoking_Risk_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.menstrual_and_ovulation.Menstrual_and_ovulation_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.smoking_risk.Smoking_Risk_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.BMR.bmr_calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.BMR.BMR_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.blood_volume.Blood_Volume_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.blood_volume.BloodVolume_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_adiposity_index.Body_Adiposity_Index_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_adiposity_index.Body_Adiposity_Index_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_adiposity_index.Body_Adiposity_Index_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_frame_size.Body_Frame_Size_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.body_frame_size.BodyFrame_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.Body_Surface_Area_Calculator.C1376Body_Surface_Area_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.Body_Surface_Area_Calculator.BodySurfaceArea_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.chest_hip_ratio.Chest_Hip_Ratio_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.chest_hip_ratio.Chest_Hip_Ratio_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.cholestrol.Cholestrol_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.cholestrol.Cholestrol_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.lean_body_mass.Lean_Body_Mass_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.lean_body_mass.Lean_Body_Mass_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.waist_height_ratio.Waist_Height_Ratio_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.waist_height_ratio.Waist_Height_Ratio_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.waist_hip_ratio.Waist_Hip_Ratio_Calculator"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.workout.bodyfat.activity.waist_hip_ratio.Waist_Hip_Ratio_Result"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog" />
+        <activity
+            android:name="com.workout.bodyfat.activity.waist_hip_ratio.Waist_Hip_Ratio_Chart"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>
