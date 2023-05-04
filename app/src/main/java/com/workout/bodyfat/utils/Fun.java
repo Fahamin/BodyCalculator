@@ -46,10 +46,7 @@ import java.io.File;
 public class Fun {
 
     public static Context context;
-    public static String appurl = "https://play.google.com/store/apps/details?id=com.kodi.setup.configurator";
-    public static String moreApp = "https://play.google.com/store/apps/dev?id=8697094179003576981";
     private static int count = 0;
-    private static int countfc = 0;
     public static Activity activity;
     private static com.facebook.ads.InterstitialAd interstitialAd;
     private static InterstitialAd mInterstitialAd;
@@ -57,8 +54,6 @@ public class Fun {
     private static int fc = 2;
     private static int admobon = 0;
     public static int nc = 15;
-    private FrameLayout adContainerView;
-
     public static boolean removeAds = false;
     public static AdView adView;
 
@@ -76,7 +71,7 @@ public class Fun {
         adContainerView.addView(adView);
         if (removeAds) {
         } else {
-            loadBanner(activity);
+            // loadBanner(activity);
         }
 
     }
@@ -174,12 +169,10 @@ public class Fun {
         if (removeAds) {
 
         } else {
-
-            addShowAdmob();
-
-
+            if (count % 3 == 0) {
+                addShowAdmob();
+            }
         }
-
     }
 
     public static void copyItem(String s) {

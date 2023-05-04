@@ -25,6 +25,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -41,7 +43,7 @@ import java.util.ArrayList;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Alcohol_Calculator extends Activity {
+public class Alcohol_Calculator extends AppCompatActivity {
     double BACinPer;
     String TAG = getClass().getSimpleName();
     
@@ -91,6 +93,11 @@ public class Alcohol_Calculator extends Activity {
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.alcohol_calculator);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         globalFunction = new GlobalFunction(this);
         sharedPreferenceManager = new SharedPreferenceManager(this);
         typefaceManager = new TypefaceManager(getAssets(), this);
@@ -109,8 +116,6 @@ public class Alcohol_Calculator extends Activity {
         new Fun(this);
         adContainerView = findViewById(R.id.ad_view_container);
         showBanner(this, adContainerView);
-
-
 
         iv_back = (ImageView) findViewById(R.id.iv_back);
         tv_alcohol.setTypeface(typefaceManager.getBold());

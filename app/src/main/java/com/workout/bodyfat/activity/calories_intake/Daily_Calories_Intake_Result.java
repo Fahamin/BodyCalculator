@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.workout.bodyfat.R;
 import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;
@@ -27,7 +29,7 @@ import java.io.PrintStream;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Daily_Calories_Intake_Result extends Activity {
+public class Daily_Calories_Intake_Result extends AppCompatActivity {
     int BMR;
     String TAG = getClass().getSimpleName();
     String activity_level;
@@ -55,6 +57,8 @@ public class Daily_Calories_Intake_Result extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.popup_calories_intake);
+
+
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.globalFunction = new GlobalFunction(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

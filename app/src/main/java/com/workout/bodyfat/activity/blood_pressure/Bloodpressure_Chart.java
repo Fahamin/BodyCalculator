@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.workout.bodyfat.R;import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;
@@ -23,7 +25,7 @@ import com.workout.bodyfat.utils.TypefaceManager;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Bloodpressure_Chart extends Activity {
+public class Bloodpressure_Chart extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     
     GlobalFunction globalFunction;
@@ -49,6 +51,11 @@ public class Bloodpressure_Chart extends Activity {
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.blood_pressure_chart);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.globalFunction = new GlobalFunction(this);
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

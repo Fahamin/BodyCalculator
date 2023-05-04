@@ -23,6 +23,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -90,6 +91,11 @@ public class bmr_calculator extends AppCompatActivity {
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.bmr_calculator);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         globalFunction = new GlobalFunction(this);
         sharedPreferenceManager = new SharedPreferenceManager(this);
         typefaceManager = new TypefaceManager(getAssets(), this);
@@ -234,9 +240,10 @@ public class bmr_calculator extends AppCompatActivity {
             sb6.append(bmr);
             Log.d("bmr_female->", sb6.toString());
         }
+
         Intent intent = new Intent(this, BMR_Result.class);
         intent.putExtra("bmr", bmr);
-        intent.putExtra("from", extras.getString("from", "bmr"));
+        intent.putExtra("from", "bmr");
         startActivity(intent);
     }
 

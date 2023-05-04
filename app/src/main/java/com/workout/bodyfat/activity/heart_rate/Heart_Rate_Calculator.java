@@ -16,6 +16,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.workout.bodyfat.R;import com.workout.bodyfat.utils.Fun;
@@ -28,7 +30,7 @@ import java.io.PrintStream;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Heart_Rate_Calculator extends Activity {
+public class Heart_Rate_Calculator extends AppCompatActivity {
     public static int HRmax;
     public static int age;
     public static double ans_heart_rate;
@@ -76,6 +78,11 @@ public class Heart_Rate_Calculator extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.heart_rate_calculator);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.globalFunction = new GlobalFunction(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

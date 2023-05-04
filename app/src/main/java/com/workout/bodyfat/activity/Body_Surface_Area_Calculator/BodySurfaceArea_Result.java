@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.workout.bodyfat.R;import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;
@@ -25,7 +26,7 @@ import com.workout.bodyfat.utils.TypefaceManager;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class BodySurfaceArea_Result extends Activity {
+public class BodySurfaceArea_Result extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     
     double bsa;

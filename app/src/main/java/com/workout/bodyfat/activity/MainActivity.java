@@ -1,9 +1,11 @@
 package com.workout.bodyfat.activity;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -47,6 +49,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import io.github.inflationx.viewpump.ViewPumpContextWrapper;
+
 public class MainActivity extends AppCompatActivity implements ItemClickListener {
     ArrayList<DataModel> all_home = new ArrayList<>();
     List<Integer> arr_image;
@@ -58,12 +62,20 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     RecyclerView recyclerview_homepage;
     TypefaceManager typefaceManager;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
 
         et_sesrch = (EditText) findViewById(R.id.et_sesrch);
         recyclerview_homepage = (RecyclerView) findViewById(R.id.recyclerview_homepage);

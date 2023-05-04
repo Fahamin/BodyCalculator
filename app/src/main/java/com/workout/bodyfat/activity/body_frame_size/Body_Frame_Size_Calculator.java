@@ -22,6 +22,8 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -38,7 +40,7 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 //import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
-public class Body_Frame_Size_Calculator extends Activity {
+public class Body_Frame_Size_Calculator extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     
     ArrayAdapter<String> adapter_gender;
@@ -88,6 +90,11 @@ public class Body_Frame_Size_Calculator extends Activity {
         super.onCreate(bundle);
         setContentView(R.layout.body_frame_calculator);
         this.globalFunction = new GlobalFunction(this);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);
         this.globalFunction.set_locale_language();

@@ -18,25 +18,25 @@
         android:src="@mipmap/left_arrow" />
 
 
-
     <RelativeLayout
         android:id="@+id/rel1"
         android:layout_width="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
         <RelativeLayout
             android:id="@+id/rel12"
             android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_centerInParent="true"
-            android:background="@drawable/a3_grad"
-            android:layout_height="100dp">
+            android:background="@drawable/a3_grad">
 
             <ImageView
                 android:id="@+id/iv_blood_donation"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_centerHorizontal="true"
                 android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
                 android:src="@drawable/img_blood_donation" />
         </RelativeLayout>
     </RelativeLayout>
@@ -55,74 +55,73 @@
 
     <LinearLayout
         android:id="@+id/cardviewone"
-        android:layout_marginBottom="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/text_15"
         android:layout_above="@+id/ad_layout"
         android:layout_below="@+id/tv_blood_donation"
+        android:layout_marginLeft="@dimen/text_15"
         android:layout_marginTop="10dp"
-
         android:layout_marginRight="@dimen/text_15"
+
+        android:layout_marginBottom="60dp"
         android:orientation="horizontal"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dip">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:background="#87AFC1"
-        android:layout_height="match_parent"
-        >
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:background="#87AFC1">
 
-            <TextView
-                android:id="@+id/tv_date"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/mFCalendarView"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/transperent"
-                android:gravity="center"
-                android:paddingLeft="5dp"
-                android:text="@string/Select_date_of_last_donation"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:textSize="@dimen/textsize_14" />
+                android:orientation="vertical">
 
-            <com.bodyfit.fitness.shashikant.calendar.SNPCalendarView
-                android:id="@+id/mFCalendarView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_gravity="center"
-                android:background="@color/line_color"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/mFCalendarView"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/transperent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="@string/Select_date_of_last_donation"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/textsize_14" />
 
-            <TextView
-                android:id="@+id/tv_search_date"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_below="@+id/mFCalendarView"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/a3_grad"
-                android:gravity="center"
-                android:text="@string/Calculate_Next_Eligible_Date"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="@dimen/textsize_14" />
-        </LinearLayout>
-    </ScrollView>
+                <com.workout.bodyfat.shashikant.calendar.SNPCalendarView
+                    android:id="@+id/mFCalendarView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:id="@+id/tv_search_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/mFCalendarView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/a3_grad"
+                    android:gravity="center"
+                    android:text="@string/Calculate_Next_Eligible_Date"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/textsize_14" />
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 

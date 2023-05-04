@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.workout.bodyfat.R;import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;
@@ -26,7 +27,7 @@ import java.io.PrintStream;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Body_Adiposity_Index_Result extends Activity {
+public class Body_Adiposity_Index_Result extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     
     String bai;

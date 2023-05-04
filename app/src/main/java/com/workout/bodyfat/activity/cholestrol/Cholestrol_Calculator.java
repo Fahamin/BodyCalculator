@@ -22,6 +22,8 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -36,7 +38,7 @@ import java.util.ArrayList;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Cholestrol_Calculator extends Activity {
+public class Cholestrol_Calculator extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     
     ArrayAdapter<String> adapter_cholestrol;
@@ -67,6 +69,10 @@ public class Cholestrol_Calculator extends Activity {
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.cholestrol_calculator);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.globalFunction = new GlobalFunction(this);
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

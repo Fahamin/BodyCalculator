@@ -13,6 +13,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.workout.bodyfat.R;
 import com.workout.bodyfat.utils.ConnectionDetector;
 import com.workout.bodyfat.utils.Fun;
@@ -26,7 +28,7 @@ import java.io.PrintStream;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Sugar_Result extends Activity {
+public class Sugar_Result extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     AdRequest adRequest;
 

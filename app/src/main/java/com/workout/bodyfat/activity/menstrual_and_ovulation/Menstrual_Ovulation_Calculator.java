@@ -21,12 +21,15 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.workout.bodyfat.R;
-;import com.workout.bodyfat.activity.shashikant.calendar.SNPCalendarView;
-import com.workout.bodyfat.activity.shashikant.calendar.onSNPCalendarViewListener;
+
+import com.workout.bodyfat.shashikant.calendar.SNPCalendarView;
+import com.workout.bodyfat.shashikant.calendar.onSNPCalendarViewListener;
 import com.workout.bodyfat.utils.DateUtil;
 import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;
@@ -42,7 +45,7 @@ import java.util.Locale;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Menstrual_Ovulation_Calculator extends Activity {
+public class Menstrual_Ovulation_Calculator extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
 
     ArrayAdapter<String> adapter_time;
@@ -81,6 +84,11 @@ public class Menstrual_Ovulation_Calculator extends Activity {
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.menstrual_and_ovulation_calculator);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.globalFunction = new GlobalFunction(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

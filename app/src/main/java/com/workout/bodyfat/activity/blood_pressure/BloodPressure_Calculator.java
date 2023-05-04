@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.workout.bodyfat.R;import com.workout.bodyfat.utils.Fun;
@@ -28,7 +30,7 @@ import java.io.PrintStream;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class BloodPressure_Calculator extends Activity {
+public class BloodPressure_Calculator extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     
     String diastolic_val;
@@ -53,6 +55,11 @@ public class BloodPressure_Calculator extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.bloodpressure_calculator);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.globalFunction = new GlobalFunction(this);
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

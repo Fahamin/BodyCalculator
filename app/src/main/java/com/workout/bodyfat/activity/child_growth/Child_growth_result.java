@@ -12,6 +12,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.workout.bodyfat.R;import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;
 import com.workout.bodyfat.utils.SharedPreferenceManager;
@@ -20,7 +22,7 @@ import com.workout.bodyfat.utils.TypefaceManager;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Child_growth_result extends Activity {
+public class Child_growth_result extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
     
     String age;

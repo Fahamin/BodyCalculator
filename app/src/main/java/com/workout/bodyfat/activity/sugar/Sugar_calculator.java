@@ -22,6 +22,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -36,7 +38,7 @@ import java.util.ArrayList;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Sugar_calculator extends Activity {
+public class Sugar_calculator extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
 
     ArrayAdapter<String> adapter_sugar;
@@ -65,6 +67,10 @@ public class Sugar_calculator extends Activity {
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.sugar_calculator);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.globalFunction = new GlobalFunction(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

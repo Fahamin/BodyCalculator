@@ -22,6 +22,7 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -81,6 +82,11 @@ public class BMI_Calculator extends AppCompatActivity {
         super.onCreate(bundle);
         setContentView(R.layout.bmi_calculator);
 
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         adContainerView = findViewById(R.id.ad_view_container);
         showBanner(this, adContainerView);
 
@@ -177,6 +183,7 @@ public class BMI_Calculator extends AppCompatActivity {
     }
 
 
+    @SuppressLint("ResourceType")
     public PopupWindow popupWindowHeight() {
         this.popupWindowHeight = new PopupWindow(this);
         this.listViewHeight = new ListView(this);

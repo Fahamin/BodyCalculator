@@ -26,6 +26,8 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -42,7 +44,7 @@ import java.util.ArrayList;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Daily_Calories_Intake_Calculator extends Activity {
+public class Daily_Calories_Intake_Calculator extends AppCompatActivity {
     Double BMR;
     String TAG = getClass().getSimpleName();
     String activity_level = "";
@@ -93,6 +95,11 @@ public class Daily_Calories_Intake_Calculator extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.calories_intake_calculator);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.globalFunction = new GlobalFunction(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);

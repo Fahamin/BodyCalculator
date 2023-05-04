@@ -21,6 +21,8 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -35,7 +37,7 @@ import java.util.ArrayList;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
-public class Lean_Body_Mass_Calculator extends Activity {
+public class Lean_Body_Mass_Calculator extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
 
     ArrayAdapter<String> adapter_gender;
@@ -82,6 +84,11 @@ public class Lean_Body_Mass_Calculator extends Activity {
     public void onCreate(@Nullable Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.lean_body_mass);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
         this.globalFunction = new GlobalFunction(this);
         this.sharedPreferenceManager = new SharedPreferenceManager(this);
         this.typefaceManager = new TypefaceManager(getAssets(), this);
