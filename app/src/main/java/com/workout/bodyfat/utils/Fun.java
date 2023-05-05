@@ -170,7 +170,7 @@ public class Fun {
 
         } else {
             if (count % 3 == 0) {
-                addShowAdmob();
+               // addShowAdmob();
             }
         }
     }

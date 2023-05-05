@@ -94,7 +94,7 @@
                     android:textColorHint="@color/black"
                     android:textSize="@dimen/textsize_14" />
 
-                <com.workout.bodyfat.shashikant.calendar.SNPCalendarView
+                <com.workout.bodyfat.CalenderSN.SNPCalendarView
                     android:id="@+id/mFCalendarView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

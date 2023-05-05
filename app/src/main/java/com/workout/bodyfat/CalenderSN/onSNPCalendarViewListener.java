@@ -1,4 +1,4 @@
-package com.workout.bodyfat.shashikant.calendar;
+package com.workout.bodyfat.CalenderSN;
 
 public interface onSNPCalendarViewListener {
     void onDateChanged(String str);

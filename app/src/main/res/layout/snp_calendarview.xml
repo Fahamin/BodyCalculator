@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.workout.bodyfat.shashikant.calendar.ExpandableScrollView
+<com.workout.bodyfat.CalenderSN.ExpandableScrollView
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
@@ -162,7 +162,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.workout.bodyfat.shashikant.calendar.ExpandableHeightGridView
+        <com.workout.bodyfat.CalenderSN.ExpandableHeightGridView
             android:id="@+id/gridview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,4 +173,4 @@
             android:numColumns="7"
             android:stretchMode="columnWidth" />
     </RelativeLayout>
-</com.workout.bodyfat.shashikant.calendar.ExpandableScrollView>
+</com.workout.bodyfat.CalenderSN.ExpandableScrollView>

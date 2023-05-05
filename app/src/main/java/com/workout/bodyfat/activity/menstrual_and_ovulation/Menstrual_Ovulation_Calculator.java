@@ -2,7 +2,6 @@ package com.workout.bodyfat.activity.menstrual_and_ovulation;
 
 import static com.workout.bodyfat.utils.Fun.showBanner;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build.VERSION;
@@ -28,8 +27,8 @@ import androidx.core.content.ContextCompat;
 
 import com.workout.bodyfat.R;
 
-import com.workout.bodyfat.shashikant.calendar.SNPCalendarView;
-import com.workout.bodyfat.shashikant.calendar.onSNPCalendarViewListener;
+import com.workout.bodyfat.CalenderSN.SNPCalendarView;
+import com.workout.bodyfat.CalenderSN.onSNPCalendarViewListener;
 import com.workout.bodyfat.utils.DateUtil;
 import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;

@@ -2,7 +2,6 @@ package com.workout.bodyfat.activity.pregnancy_due_date;
 
 import static com.workout.bodyfat.utils.Fun.showBanner;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build.VERSION;
@@ -21,8 +20,8 @@ import androidx.core.app.ActivityCompat;
 
 import com.workout.bodyfat.R;
 ;import com.workout.bodyfat.activity.blood_donation.Blood_Donation_Result;
-import com.workout.bodyfat.shashikant.calendar.SNPCalendarView;
-import com.workout.bodyfat.shashikant.calendar.onSNPCalendarViewListener;
+import com.workout.bodyfat.CalenderSN.SNPCalendarView;
+import com.workout.bodyfat.CalenderSN.onSNPCalendarViewListener;
 import com.workout.bodyfat.utils.DateUtil;
 import com.workout.bodyfat.utils.Fun;
 import com.workout.bodyfat.utils.GlobalFunction;
