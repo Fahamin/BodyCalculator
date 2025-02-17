@@ -14,5 +14,5 @@ dependencyResolutionManagement {
         jcenter()
     }
 }
-rootProject.name = "Health Conscious"
+rootProject.name = "bmi calculator"
 include ':app'
